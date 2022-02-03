@@ -34,6 +34,42 @@ public class Job {
         this.coreCompetency = coreCompetency;
     }
 
+    public String toString() {
+        String aemployer = String.valueOf(employer);
+        String alocation = String.valueOf(location);
+        String apositionType = String.valueOf(positionType);
+        String aCoreCompetency = String.valueOf(coreCompetency);
+        if (name == "") {
+            this.name = "Data not available.";
+        }
+
+        if (employer.getValue() == "") {
+            aemployer = "Data not available.";
+        }
+
+        if (location.getValue() == "") {
+            alocation = "Data not available.";
+        }
+
+        if (positionType.getValue() == "") {
+            apositionType = "Data not available.";
+        }
+
+        if (coreCompetency.getValue() == "") {
+            aCoreCompetency = "Data not available.";
+        }
+
+        String jobStrings = "\n" +
+                "ID: " + id + "\n" +
+                "Name: " + name + "\n" +
+                "Employer: " + aemployer + "\n" +
+                "Location: " + alocation + "\n" +
+                "Position Type: " + apositionType  + "\n" +
+                "Core Competency: " + aCoreCompetency +
+                "\n";
+        return jobStrings;
+    }
+
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
 
