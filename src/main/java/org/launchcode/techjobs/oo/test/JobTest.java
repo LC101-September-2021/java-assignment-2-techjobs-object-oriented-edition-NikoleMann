@@ -23,11 +23,17 @@ public class JobTest {
         String string4 = "Quality control";
         String string5 = "Persistence";
 
-        assertTrue(job1.getName() == string1);
-        assertTrue(job1.getEmployer().getValue() == string2);
-        assertTrue(job1.getLocation().getValue() == string3);
-        assertTrue(job1.getPositionType().getValue() == string4);
-        assertTrue(job1.getCoreCompetency().getValue() == string5);
+        assertEquals(string1, job1.getName());
+        assertEquals(string2, job1.getEmployer().getValue());
+        assertEquals(string3, job1.getLocation().getValue());
+        assertEquals(string4, job1.getPositionType().getValue());
+        assertEquals(string5, job1.getCoreCompetency().getValue());
+
+//        assertTrue(job1.getName().equals(string1));
+//        assertTrue(job1.getEmployer().getValue().equals(string2));
+//        assertTrue(job1.getLocation().getValue().equals(string3));
+//        assertTrue(job1.getPositionType().getValue() .equals(string4));
+//        assertTrue(job1.getCoreCompetency().getValue().equals(string5));
     }
 
     @Test
