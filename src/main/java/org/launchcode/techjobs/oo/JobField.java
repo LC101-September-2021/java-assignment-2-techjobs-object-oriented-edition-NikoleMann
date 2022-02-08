@@ -4,9 +4,15 @@ import java.util.Objects;
 
 public abstract class JobField {
 
-     int id;
-     static int nextId = 1;
-     String value;
+     private int id;
+     private static int nextId = 1;
+     private String value;
+
+    public JobField(String value) {
+        this.id = nextId;
+        nextId++;
+        this.value = value;
+    }
 
     @Override
     public String toString() {

@@ -8,14 +8,13 @@ public class Employer extends JobField {
 //    private static int nextId = 1;
 //    private String value;
 
-    public Employer() {
-        id = nextId;
-        nextId++;
-    }
+//    public Employer() {
+//        id = nextId;
+//        nextId++;
+//    }
 
     public Employer(String value) {
-        this();
-        this.value = value;
+        super(value);
     }
 
     // Custom toString, equals, and hashCode methods:
