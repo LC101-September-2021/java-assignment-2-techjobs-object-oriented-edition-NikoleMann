@@ -40,23 +40,23 @@ public class Job {
         String apositionType = String.valueOf(positionType);
         String aCoreCompetency = String.valueOf(coreCompetency);
         if (name == "") {
-            this.name = "Data not available.";
+            this.name = "Data not available";
         }
 
         if (employer.getValue() == "") {
-            aemployer = "Data not available.";
+            aemployer = "Data not available";
         }
 
         if (location.getValue() == "") {
-            alocation = "Data not available.";
+            alocation = "Data not available";
         }
 
         if (positionType.getValue() == "") {
-            apositionType = "Data not available.";
+            apositionType = "Data not available";
         }
 
         if (coreCompetency.getValue() == "") {
-            aCoreCompetency = "Data not available.";
+            aCoreCompetency = "Data not available";
         }
 
         String jobStrings = "\n" +
