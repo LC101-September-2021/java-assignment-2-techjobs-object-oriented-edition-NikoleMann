@@ -25,7 +25,7 @@ public class Job {
     }
 
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
-        super();
+        this();
         this.id = id;
         this.name = name;
         this.employer = employer;
